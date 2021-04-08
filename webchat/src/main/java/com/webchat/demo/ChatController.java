@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-//@RequestMapping(value = "")
+@RequestMapping(value = "")
 public class ChatController {
 
-    @GetMapping(value = "/chat")
+    @GetMapping(value = "")
     public ModelAndView showUserInterface(){
         ModelAndView modelAndView=new ModelAndView("nguyen/index");
         return modelAndView;
